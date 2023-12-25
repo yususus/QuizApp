@@ -1,0 +1,243 @@
+[
+    {
+      "soru": "C# nedir?",
+      "secenekler": [
+        "Bir programlama dilidir.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir işletim sistemidir.",
+        "Bir CSS framework'üdür."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir değişken nasıl tanımlanır?",
+      "secenekler": [
+        "değişken x = 5;",
+        "var x = 5;",
+        "x = new Variable(5);",
+        "int x = 5;"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "C#'da bir metot nasıl tanımlanır?",
+      "secenekler": [
+        "function void MyMethod() { }",
+        "def void MyMethod() { }",
+        "void MyMethod() { }",
+        "method MyMethod() { }"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "C#'da bir sınıf nasıl tanımlanır?",
+      "secenekler": [
+        "class MyClass { }",
+        "new class = MyClass();",
+        "define class MyClass: end",
+        "MyClass = class { }"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir sınıfın özelliğini (property) tanımlamak için hangi kelime kullanılır?",
+      "secenekler": [
+        "property",
+        "attribute",
+        "field",
+        "member"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir sınıfa yeni bir özellik eklemek için hangi erişim belirleyicisi kullanılır?",
+      "secenekler": [
+        "public",
+        "private",
+        "protected",
+        "internal"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir sınıfın özelliklerini gizlemek için hangi kelime kullanılır?",
+      "secenekler": [
+        "hide",
+        "restrict",
+        "override",
+        "encapsulate"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "C#'da bir dizi (array) nasıl tanımlanır?",
+      "secenekler": [
+        "Array myArray = new Array();",
+        "myArray = new Array();",
+        "int[] myArray = new int[5];",
+        "array myArray = {1, 2, 3};"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "C#'da bir döngüyü sonlandırmak için hangi anahtar kelime kullanılır?",
+      "secenekler": [
+        "break",
+        "end",
+        "terminate",
+        "exit"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir List nasıl oluşturulur?",
+      "secenekler": [
+        "List myList = new List();",
+        "List<int> myList = new List<int>();",
+        "ArrayList myList = create ArrayList();",
+        "myList = new ArrayList();"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "C#'da bir dosyadan veri okumak için hangi sınıf kullanılır?",
+      "secenekler": [
+        "FileReader",
+        "FileWriter",
+        "BufferedReader",
+        "StreamReader"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "C#'da bir thread nasıl oluşturulur?",
+      "secenekler": [
+        "Thread t = new Thread();",
+        "Thread.start();",
+        "start Thread t = new Thread();",
+        "Thread.create();"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir metodu override etmek ne demektir?",
+      "secenekler": [
+        "Metodu bir daha çağırmak.",
+        "Metodu geliştirmek.",
+        "Metodu değiştirmek ve genişletmek.",
+        "Metodu gizlemek."
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "C#'da bir dosyaya veri yazmak için hangi sınıf kullanılır?",
+      "secenekler": [
+        "FileReader",
+        "BufferedReader",
+        "FileWriter",
+        "StreamWriter"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "C#'da bir exception (istisna) ne işe yarar?",
+      "secenekler": [
+        "Programın düzgün çalışmasını sağlar.",
+        "Hata durumlarını temsil eder ve işlemek için kullanılır.",
+        "Programın hızını artırır.",
+        "Bir dosyayı okumak için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "C#'da bir metodu asenkron hale getirmek için hangi kelime kullanılır?",
+      "secenekler": [
+        "async",
+        "sync",
+        "await",
+        "thread"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir sınıftan yeni bir örnek (instance) oluşturmak için hangi kelime kullanılır?",
+      "secenekler": [
+        "instantiate",
+        "instance",
+        "new",
+        "create"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "C#'da bir enum (sıralı liste) nasıl tanımlanır?",
+      "secenekler": [
+        "enum MyEnum { Item1, Item2, Item3 };",
+        "enum MyEnum = { Item1, Item2, Item3 };",
+        "enum = { Item1, Item2, Item3 };",
+        "define enum MyEnum { Item1, Item2, Item3 };"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir delegate nedir?",
+      "secenekler": [
+        "Bir dosya içindeki bir sınıftır.",
+        "Bir metodu temsil eden bir referanstır.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir thread'dir."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "C#'da bir sınıfın örneğini oluşturmak için hangi kelime kullanılır?",
+      "secenekler": [
+        "create",
+        "new",
+        "instance",
+        "instantiate"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "C#'da bir metodu overload etmek ne demektir?",
+      "secenekler": [
+        "Aynı sınıf içinde birden fazla metot tanımlamak.",
+        "Bir metodu başka bir sınıftan miras almak.",
+        "Bir metodu değiştirmek ve genişletmek.",
+        "Bir metodu gizlemek."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir property'yi (özelliği) tanımlamak için hangi sözcüğü kullanırsınız?",
+      "secenekler": [
+        "property",
+        "attribute",
+        "field",
+        "member"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir interfaceden miras almak için hangi kelime kullanılır?",
+      "secenekler": [
+        "class MyClass implements MyInterface { }",
+        "MyClass = interface MyInterface { }",
+        "class MyInterface implements MyClass { }",
+        "MyClass implements { } MyInterface;"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "C#'da bir switch-case yapısı hangi tür verilerle kullanılabilir?",
+      "secenekler": [
+        "Sadece sayısal verilerle",
+        "Sadece metinsel verilerle",
+        "Hem sayısal hem de metinsel verilerle",
+        "Sadece boolean verilerle"
+      ],
+      "dogruSecenek": 0
+    }
+  ]
+  

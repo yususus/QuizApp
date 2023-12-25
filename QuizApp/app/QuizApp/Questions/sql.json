@@ -1,0 +1,243 @@
+[
+    {
+      "soru": "SQL nedir?",
+      "secenekler": [
+        "Bir programlama dilidir.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir işletim sistemidir.",
+        "Bir CSS framework'üdür."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'in temel komutları nelerdir?",
+      "secenekler": [
+        "SELECT, UPDATE, DELETE, INSERT",
+        "PRINT, MODIFY, REMOVE, ADD",
+        "SEARCH, CHANGE, DISCARD, APPEND",
+        "EXECUTE, ALTER, ERASE, ADD"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "SQL'de bir tabloya yeni bir kayıt eklemek için hangi komut kullanılır?",
+      "secenekler": [
+        "ADD",
+        "CREATE",
+        "INSERT",
+        "UPDATE"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "SQL'de bir tablodan kayıtları silmek için hangi komut kullanılır?",
+      "secenekler": [
+        "DELETE",
+        "REMOVE",
+        "ERASE",
+        "DROP"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "SQL'de bir tablodaki verileri güncellemek için hangi komut kullanılır?",
+      "secenekler": [
+        "ALTER",
+        "UPDATE",
+        "MODIFY",
+        "CHANGE"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'de bir tablonun yapısını değiştirmek için hangi komut kullanılır?",
+      "secenekler": [
+        "REBUILD",
+        "ALTER",
+        "CHANGE",
+        "MODIFY"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'de bir tablo oluşturmak için hangi komut kullanılır?",
+      "secenekler": [
+        "ADD TABLE",
+        "CREATE TABLE",
+        "MAKE TABLE",
+        "DEFINE TABLE"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'de bir tabloyu silmek için hangi komut kullanılır?",
+      "secenekler": [
+        "REMOVE TABLE",
+        "DROP TABLE",
+        "DELETE TABLE",
+        "ERASE TABLE"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'de bir tabloyu sıralamak için hangi komut kullanılır?",
+      "secenekler": [
+        "ARRANGE",
+        "ORDER",
+        "SORT",
+        "SELECT"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "SQL'de bir tabloyu sıralarken tersten sıralamak için hangi kelime kullanılır?",
+      "secenekler": [
+        "DESC",
+        "REVERSE",
+        "BOTTOM",
+        "INVERSE"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "SQL'de bir tablodan belirli koşulları sağlayan kayıtları seçmek için hangi komut kullanılır?",
+      "secenekler": [
+        "GET",
+        "SEARCH",
+        "PICK",
+        "SELECT"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "SQL'de bir tabloya yeni bir sütun eklemek için hangi komut kullanılır?",
+      "secenekler": [
+        "ALTER COLUMN",
+        "ADD COLUMN",
+        "CREATE COLUMN",
+        "INSERT COLUMN"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "SQL'de bir tablonun belirli bir sütunundaki verileri seçmek için hangi komut kullanılır?",
+      "secenekler": [
+        "EXTRACT",
+        "GET",
+        "PULL",
+        "SELECT"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "SQL'de bir tablonun belirli bir sütununu güncellemek için hangi komut kullanılır?",
+      "secenekler": [
+        "MODIFY COLUMN",
+        "CHANGE COLUMN",
+        "ALTER COLUMN",
+        "UPDATE COLUMN"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "SQL'de bir tablonun belirli bir sütunundaki verileri silmek için hangi komut kullanılır?",
+      "secenekler": [
+        "REMOVE",
+        "DELETE",
+        "ERASE",
+        "DROP"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'de DISTINCT kelimesi ne işe yarar?",
+      "secenekler": [
+        "Tekrarlanan değerleri filtrelemek için kullanılır.",
+        "Tabloyu silmek için kullanılır.",
+        "Veritabanını sıfırlamak için kullanılır.",
+        "Tabloyu sıralamak için kullanılır."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "SQL'de bir JOIN operatörü ile hangi işlem yapılır?",
+      "secenekler": [
+        "Tabloyu sıralamak",
+        "İki tabloyu birleştirmek",
+        "Tablodaki verileri silmek",
+        "Tabloyu güncellemek"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'de WHERE koşulu ne işe yarar?",
+      "secenekler": [
+        "Tabloyu sıralamak",
+        "Belirli koşulları sağlayan kayıtları seçmek",
+        "Tabloyu güncellemek",
+        "Tablodaki verileri silmek"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'de GROUP BY ve HAVING ifadeleri ne işe yarar?",
+      "secenekler": [
+        "Tabloyu sıralamak",
+        "Belirli koşulları sağlayan kayıtları seçmek",
+        "Toplu verileri gruplamak ve filtrelemek",
+        "Tabloyu güncellemek"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "SQL'de bir tabloyu yedeklemek için hangi komut kullanılır?",
+      "secenekler": [
+        "COPY TABLE",
+        "BACKUP TABLE",
+        "SAVE TABLE",
+        "EXPORT TABLE"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'de bir transaksiyonu başlatmak için hangi komut kullanılır?",
+      "secenekler": [
+        "BEGIN TRANSACTION",
+        "START TRANSACTION",
+        "INITIATE TRANSACTION",
+        "COMMENCE TRANSACTION"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "SQL'de bir transaksiyonu başarılı bir şekilde tamamlamak için hangi komut kullanılır?",
+      "secenekler": [
+        "END TRANSACTION",
+        "STOP TRANSACTION",
+        "FINISH TRANSACTION",
+        "COMMIT TRANSACTION"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "SQL'de bir transaksiyonu geri almak için hangi komut kullanılır?",
+      "secenekler": [
+        "UNDO TRANSACTION",
+        "ROLLBACK TRANSACTION",
+        "REVERSE TRANSACTION",
+        "CANCEL TRANSACTION"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "SQL'de bir tablodan belirli sütunları seçmek için hangi komut kullanılır?",
+      "secenekler": [
+        "FILTER",
+        "SELECT",
+        "PICK",
+        "EXTRACT"
+      ],
+      "dogruSecenek": 1
+    }
+  ]
+  

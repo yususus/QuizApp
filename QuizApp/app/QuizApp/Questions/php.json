@@ -1,0 +1,253 @@
+[
+    {
+      "soru": "PHP nedir?",
+      "secenekler": [
+        "Bir programlama dilidir.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir işletim sistemidir.",
+        "Bir CSS framework'üdür."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "PHP'da bir değişken nasıl tanımlanır?",
+      "secenekler": [
+        "$x = 5;",
+        "var x = 5;",
+        "x = new Variable(5);",
+        "int x = 5;"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "PHP'da bir fonksiyon nasıl tanımlanır?",
+      "secenekler": [
+        "function myFunction() { }",
+        "def myFunction() { }",
+        "void myFunction() { }",
+        "func myFunction() { }"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "PHP'da bir sınıf nasıl tanımlanır?",
+      "secenekler": [
+        "class MyClass { }",
+        "new class = MyClass();",
+        "define class MyClass: end",
+        "MyClass = class { }"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "PHP'da bir dizi (array) nasıl oluşturulur?",
+      "secenekler": [
+        "$myArray = array(1, 2, 3);",
+        "$myArray = [1, 2, 3];",
+        "$myArray = new Array();",
+        "$myArray = {1, 2, 3};"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "PHP'da bir döngüyü sonlandırmak için hangi kelime kullanılır?",
+      "secenekler": [
+        "break",
+        "end",
+        "terminate",
+        "exit"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "PHP'da bir fonksiyona parametre nasıl geçilir?",
+      "secenekler": [
+        "myFunction(5);",
+        "call myFunction with 5;",
+        "invoke myFunction(5);",
+        "myFunction = 5;"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "PHP'da bir dosyadan veri okumak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "readFile()",
+        "openFile()",
+        "read()",
+        "file_get_contents()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "PHP'da bir stringin uzunluğunu nasıl bulabilirsiniz?",
+      "secenekler": [
+        "len(myString)",
+        "myString.length()",
+        "length(myString)",
+        "strlen(myString)"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "PHP'da bir diziye eleman eklemek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "array_push()",
+        "push_array()",
+        "add_to_array()",
+        "append_array()"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "PHP'da bir dosyaya veri yazmak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "writeFile()",
+        "openFile()",
+        "write()",
+        "file_put_contents()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "PHP'da bir switch-case yapısı hangi tür verilerle kullanılabilir?",
+      "secenekler": [
+        "Sadece sayısal verilerle",
+        "Sadece metinsel verilerle",
+        "Hem sayısal hem de metinsel verilerle",
+        "Sadece boolean verilerle"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "PHP'da bir sınıftan yeni bir örnek (instance) oluşturmak için hangi kelime kullanılır?",
+      "secenekler": [
+        "instantiate",
+        "instance",
+        "new",
+        "create"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "PHP'da bir dosyadan veri okurken kaçış karakteri nedir?",
+      "secenekler": [
+        "\\n",
+        "\\r",
+        "\\t",
+        "\\a"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "PHP'da bir dosyayı kapatmak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "closeFile()",
+        "fileClose()",
+        "close()",
+        "fclose()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "PHP'da bir exception (istisna) ne işe yarar?",
+      "secenekler": [
+        "Programın düzgün çalışmasını sağlar.",
+        "Hata durumlarını temsil eder ve işlemek için kullanılır.",
+        "Programın hızını artırır.",
+        "Bir dosyayı okumak için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "PHP'da bir sayının karesini almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "square()",
+        "sqrt()",
+        "power()",
+        "pow()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "PHP'da bir stringi ters çevirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "reverseString()",
+        "str_reverse()",
+        "strrev()",
+        "flipString()"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "PHP'da bir diziyi sıralamak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "arrange()",
+        "sortArray()",
+        "arraySort()",
+        "sort()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "PHP'da bir diziyi tersine çevirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "reverseArray()",
+        "flipArray()",
+        "array_reverse()",
+        "arr_reverse()"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "PHP'da bir dizinin belirli bir elemanını almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "getElement()",
+        "array_element()",
+        "getArrayElement()",
+        "array_slice()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "PHP'da bir dizinin son elemanını almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "getLast()",
+        "endElement()",
+        "array_last()",
+        "end()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "PHP'da bir dizinin belirli bir elemanını silmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "removeElement()",
+        "deleteElement()",
+        "unset()",
+        "splice()"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "PHP'da bir dizinin boyutunu nasıl bulabilirsiniz?",
+      "secenekler": [
+        "sizeOf()",
+        "count()",
+        "length()",
+        "getSize()"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "PHP'da bir sayının mutlak değerini almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "abs()",
+        "absolute()",
+        "absoluteValue()",
+        "math.abs()"
+      ],
+      "dogruSecenek": 0
+    }
+  ]
+  

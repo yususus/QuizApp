@@ -1,0 +1,233 @@
+[
+    {
+      "soru": "CSS nedir?",
+      "secenekler": [
+        "Bir programlama dilidir.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir işletim sistemidir.",
+        "Bir stil ve düzenleme dili"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "CSS'de bir elemente nasıl stil uygulanır?",
+      "secenekler": [
+        "style { }",
+        "design: { }",
+        "element-style: { }",
+        "element { }"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "CSS'de bir elemente direkt stil eklemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "style",
+        "direct-style",
+        "inline-style",
+        "element-style"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "CSS'de bir elementin genişliğini ayarlamak için hangi özellik kullanılır?",
+      "secenekler": [
+        "width",
+        "size",
+        "dimension",
+        "length"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin yüksekliğini ayarlamak için hangi özellik kullanılır?",
+      "secenekler": [
+        "height",
+        "tall",
+        "length",
+        "size"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin arka plan rengini belirlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "background-color",
+        "color",
+        "back-color",
+        "element-color"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin yazı rengini belirlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "font-color",
+        "color",
+        "text-color",
+        "element-color"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "CSS'de bir elementin kenarlık kalınlığını belirlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "border",
+        "border-thickness",
+        "border-width",
+        "thickness"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "CSS'de bir elementin kenarlık rengini belirlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "border-color",
+        "edge-color",
+        "line-color",
+        "border-style"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin kenarlık stilini belirlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "border-style",
+        "edge-style",
+        "line-style",
+        "style"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin iç içe geçmiş öğeler arasındaki boşluğunu ayarlamak için hangi özellik kullanılır?",
+      "secenekler": [
+        "margin",
+        "spacing",
+        "padding",
+        "gap"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin iç içe geçmiş öğeler arasındaki boşluğu ayarlamak için hangi özellik kullanılır?",
+      "secenekler": [
+        "margin",
+        "spacing",
+        "padding",
+        "gap"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "CSS'de bir elementin köşe yuvarlaması için hangi özellik kullanılır?",
+      "secenekler": [
+        "corner-radius",
+        "border-radius",
+        "rounding",
+        "edge-rounding"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "CSS'de bir elementin gölgesini ayarlamak için hangi özellik kullanılır?",
+      "secenekler": [
+        "shadow",
+        "box-shadow",
+        "element-shadow",
+        "cast-shadow"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "CSS'de bir elementin görünürlüğünü gizlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "display: none;",
+        "visibility: hidden;",
+        "visible: false;",
+        "hide: true;"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "CSS'de bir elementin altındaki öğelerin sıralanma düzenini belirlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "order",
+        "layout",
+        "arrange",
+        "position"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin yazı tipini belirlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "font-family",
+        "text-font",
+        "style-font",
+        "font-style"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin yazı boyutunu belirlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "text-size",
+        "font-size",
+        "size",
+        "font-height"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "CSS'de bir elementin yazı kalınlığını belirlemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "font-weight",
+        "text-weight",
+        "weight",
+        "bold"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin yazı stiline gölge eklemek için hangi özellik kullanılır?",
+      "secenekler": [
+        "text-shadow",
+        "font-shadow",
+        "shadow",
+        "style-shadow"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin üzerine gelindiğinde uygulanacak stil için hangi seçici kullanılır?",
+      "secenekler": [
+        ":hover",
+        ":active",
+        ":focus",
+        ":select"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin altındaki öğeleri seçmek için hangi seçici kullanılır?",
+      "secenekler": [
+        ">",
+        "+",
+        "space",
+        "~"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "CSS'de bir elementin belirli bir durumunu seçmek için hangi seçici kullanılır?",
+      "secenekler": [
+        ":first-child",
+        ":last-child",
+        ":nth-child",
+        ":only-child"
+      ],
+      "dogruSecenek": 2
+    }
+  ]
+  

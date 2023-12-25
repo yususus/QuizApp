@@ -1,0 +1,253 @@
+[
+    {
+      "soru": "Python nedir?",
+      "secenekler": [
+        "Bir programlama dilidir.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir işletim sistemidir.",
+        "Bir CSS framework'üdür."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'ın temel özellikleri nelerdir?",
+      "secenekler": [
+        "Dinamik tip belirleme, yüksek seviyeli dil, geniş kütüphane desteği",
+        "Statisch tip belirleme, düşük seviyeli dil, sınırlı kütüphane desteği",
+        "Yalnızca web geliştirmeye uygun olması, tek iş parçacığı desteği, düşük performans",
+        "Scripting dil olması, düşük seviye dil olması, sınırlı kütüphane desteği"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir değişken nasıl tanımlanır?",
+      "secenekler": [
+        "variable x;",
+        "var x;",
+        "x = 5;",
+        "int x = 5;"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Python'da bir liste nasıl oluşturulur?",
+      "secenekler": [
+        "list my_list = [1, 2, 3];",
+        "array my_list = {1, 2, 3};",
+        "my_list = new List();",
+        "List my_list = create List();"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir if-else yapısı nasıl kullanılır?",
+      "secenekler": [
+        "if x == 5 { print('Equal'); } else { print('Not equal'); }",
+        "if x = 5: print('Equal') else: print('Not equal')",
+        "if x == 5: print('Equal') else: print('Not equal')",
+        "if x = 5 then print('Equal') else print('Not equal')"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Python'da bir fonksiyon nasıl tanımlanır?",
+      "secenekler": [
+        "function my_function():",
+        "def my_function():",
+        "func my_function():",
+        "method my_function():"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Python'da bir dosyadan veri okumak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "readFile()",
+        "openFile()",
+        "read()",
+        "fileRead()"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Python'da bir string nasıl ters çevrilir?",
+      "secenekler": [
+        "str.reverse()",
+        "reverseString()",
+        "str[::-1]",
+        "invertString()"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Python'da bir tuple nasıl oluşturulur?",
+      "secenekler": [
+        "tuple my_tuple = (1, 2, 3);",
+        "my_tuple = new Tuple();",
+        "Tuple my_tuple = create Tuple();",
+        "array my_tuple = {1, 2, 3};"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir class (sınıf) nasıl tanımlanır?",
+      "secenekler": [
+        "class MyClass:",
+        "MyClass = class {}",
+        "define class MyClass: end",
+        "MyClass = define class {}"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir for döngüsü nasıl kullanılır?",
+      "secenekler": [
+        "for i in range(5):",
+        "for i = 0 to 4:",
+        "foreach i in range(5):",
+        "loop i in range(5):"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir set nasıl oluşturulur?",
+      "secenekler": [
+        "set my_set = {1, 2, 3};",
+        "my_set = new Set();",
+        "Set my_set = create Set();",
+        "array my_set = {1, 2, 3};"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir try-except blokları ne işe yarar?",
+      "secenekler": [
+        "Bir döngüyü tanımlamak için kullanılır.",
+        "Hata yakalamak ve işlemek için kullanılır.",
+        "Veritabanı bağlantısı kurmak için kullanılır.",
+        "Bir dosyayı okumak için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Python'da bir dictionary (sözlük) nasıl oluşturulur?",
+      "secenekler": [
+        "dictionary my_dict = {1: 'one', 2: 'two'};",
+        "my_dict = new Dictionary();",
+        "Dictionary my_dict = create Dictionary();",
+        "array my_dict = {1: 'one', 2: 'two'};"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir while döngüsü nasıl kullanılır?",
+      "secenekler": [
+        "while x < 5:",
+        "loop x in range(5):",
+        "for x in range(5):",
+        "while x = 5:"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir lambda fonksiyonu nasıl tanımlanır?",
+      "secenekler": [
+        "function x: x * 2",
+        "lambda x: x * 2",
+        "def x: x * 2",
+        "func x: x * 2"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Python'da bir dosyaya veri yazmak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "writeFile()",
+        "openFile()",
+        "write()",
+        "fileWrite()"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Python'da bir modül (module) nedir?",
+      "secenekler": [
+        "Bir sınıfın örneğidir.",
+        "Bir dosya içindeki fonksiyonlar ve değişkenlerin bir koleksiyonudur.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir dosyanın içindeki bir sınıftır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Python'da bir dosyanın sonuna nasıl veri eklenir?",
+      "secenekler": [
+        "appendFile()",
+        "fileAppend()",
+        "append()",
+        "file.write(append)"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Python'da bir exception (istisna) ne işe yarar?",
+      "secenekler": [
+        "Programın düzgün çalışmasını sağlar.",
+        "Hata durumlarını temsil eder ve işlemek için kullanılır.",
+        "Programın hızını artırır.",
+        "Bir dosyayı okumak için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Python'da bir stringin uzunluğunu nasıl bulabilirsiniz?",
+      "secenekler": [
+        "len(my_string)",
+        "my_string.length()",
+        "length(my_string)",
+        "my_string.len()"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir dosyayı kapatmak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "closeFile()",
+        "fileClose()",
+        "close()",
+        "file.close()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "Python'da bir dosyadan veri okurken kaçış karakteri nedir?",
+      "secenekler": [
+        "\\n",
+        "\\r",
+        "\\t",
+        "\\a"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Python'da bir listeyi nasıl sıralarsınız?",
+      "secenekler": [
+        "sortList(my_list);",
+        "my_list.sort();",
+        "List.sort(my_list);",
+        "sort(my_list);"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Python'da bir dosyadan veri okurken kaçış karakteri nedir?",
+      "secenekler": [
+        "\\n",
+        "\\r",
+        "\\t",
+        "\\a"
+      ],
+      "dogruSecenek": 0
+    }
+  ]
+  

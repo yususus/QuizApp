@@ -1,0 +1,243 @@
+[
+    {
+      "soru": "JavaScript nedir?",
+      "secenekler": [
+        "Bir programlama dilidir.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir işletim sistemidir.",
+        "Bir CSS framework'üdür."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "JavaScript'te bir değişken nasıl tanımlanır?",
+      "secenekler": [
+        "değişken x = 5;",
+        "var x = 5;",
+        "x = new Variable(5);",
+        "int x = 5;"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "JavaScript'te bir fonksiyon nasıl tanımlanır?",
+      "secenekler": [
+        "function myFunction() { }",
+        "def myFunction() { }",
+        "void myFunction() { }",
+        "func myFunction() { }"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "JavaScript'te bir dizi (array) nasıl oluşturulur?",
+      "secenekler": [
+        "Array myArray = new Array();",
+        "myArray = new Array();",
+        "var myArray = [1, 2, 3];",
+        "myArray = {1, 2, 3};"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "JavaScript'te bir döngüyü sonlandırmak için hangi kelime kullanılır?",
+      "secenekler": [
+        "break",
+        "end",
+        "terminate",
+        "exit"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "JavaScript'te bir diziye eleman eklemek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "array_push()",
+        "push_array()",
+        "add_to_array()",
+        "append_array()"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "JavaScript'te bir nesnenin özelliklerini gizlemek için hangi kavram kullanılır?",
+      "secenekler": [
+        "hide",
+        "restrict",
+        "override",
+        "encapsulation"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "JavaScript'te bir stringin uzunluğunu nasıl bulabilirsiniz?",
+      "secenekler": [
+        "len(myString)",
+        "myString.length()",
+        "length(myString)",
+        "myString.len()"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "JavaScript'te bir nesnenin özelliklerini değiştirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "modify()",
+        "change()",
+        "alter()",
+        "Object.assign()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "JavaScript'te bir dizi elemanlarını filtrelemek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "filterArray()",
+        "array_filter()",
+        "selectArray()",
+        "findArray()"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "JavaScript'te bir nesnenin özelliklerini sıralamak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "arrange()",
+        "sort()",
+        "order()",
+        "Object.keys()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "JavaScript'te bir nesnenin belirli bir özelliğini silmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "deleteProperty()",
+        "removeProperty()",
+        "unset()",
+        "delete()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "JavaScript'te bir nesnenin özelliklerini birleştirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "merge()",
+        "combine()",
+        "union()",
+        "Object.assign()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "JavaScript'te bir stringi ters çevirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "reverseString()",
+        "str_reverse()",
+        "strrev()",
+        "flipString()"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "JavaScript'te bir sayının karesini almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "square()",
+        "sqrt()",
+        "power()",
+        "Math.pow()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "JavaScript'te bir sayının mutlak değerini almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "abs()",
+        "absolute()",
+        "absoluteValue()",
+        "Math.abs()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "JavaScript'te bir sayıyı yuvarlamak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "round()",
+        "ceil()",
+        "floor()",
+        "Math.round()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "JavaScript'te bir stringi büyük harfe çevirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "toUpperCase()",
+        "toUpper()",
+        "makeUpperCase()",
+        "stringToUpper()"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "JavaScript'te bir stringi küçük harfe çevirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "toLowerCase()",
+        "toLower()",
+        "makeLowerCase()",
+        "stringToLower()"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "JavaScript'te bir dizi elemanlarını birleştirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "concat()",
+        "combine()",
+        "merge()",
+        "join()"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "JavaScript'te bir nesnenin belirli bir özelliğini kontrol etmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "checkProperty()",
+        "hasOwnProperty()",
+        "propertyExists()",
+        "validateProperty()"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "JavaScript'te bir nesnenin özelliklerini döngü ile gezmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "loopProperties()",
+        "forIn()",
+        "iterateObject()",
+        "enumerateProperties()"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "JavaScript'te bir stringin belirli bir bölümünü kesmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "substring()",
+        "slice()",
+        "cut()",
+        "trim()"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "JavaScript'te bir dizi elemanlarını sıralamak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "arrange()",
+        "sortArray()",
+        "arraySort()",
+        "sort()"
+      ],
+      "dogruSecenek": 3
+    }
+  ]
+  

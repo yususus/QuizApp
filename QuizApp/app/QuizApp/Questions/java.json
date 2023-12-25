@@ -1,0 +1,243 @@
+[
+    {
+      "soru": "Java nedir?",
+      "secenekler": [
+        "Bir programlama dilidir.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir CSS framework'üdür.",
+        "Bir işletim sistemidir."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'nın temel özellikleri nelerdir?",
+      "secenekler": [
+        "Garbage collection, platform bağımsızlık, çoklu iş parçacığı desteği",
+        "Sadece web geliştirmeye uygun olması, tek iş parçacığı desteği, düşük performans",
+        "Sadece mobil uygulama geliştirmeye uygun olması, yüksek bellek tüketimi, platforma bağlılık",
+        "Scripting dil olması, düşük seviye dil olması, sınırlı kütüphane desteği"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da bir sınıf nasıl tanımlanır?",
+      "secenekler": [
+        "class MyClass { }",
+        "new class = MyClass();",
+        "define class MyClass: end",
+        "MyClass = class { }"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da miras (inheritance) nedir?",
+      "secenekler": [
+        "Bir sınıfın başka bir sınıftan özelliklerini ve davranışlarını almasıdır.",
+        "Bir sınıfın kendi içindeki üyelerle etkileşimde bulunmasıdır.",
+        "Bir sınıfın başka bir sınıfın üyelerini değiştirmesi ve geliştirmesi.",
+        "Bir sınıfın başka bir sınıftan tüm özelliklerini kopyalamasıdır."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da try-catch blokları ne işe yarar?",
+      "secenekler": [
+        "Bir döngüyü tanımlamak için kullanılır.",
+        "Hata yakalamak ve işlemek için kullanılır.",
+        "Veritabanı bağlantısı kurmak için kullanılır.",
+        "Bir dosyayı okumak için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Java'da interface nedir?",
+      "secenekler": [
+        "Bir sınıfın başka bir sınıftan özelliklerini ve davranışlarını almasıdır.",
+        "Bir sınıfın kendi içindeki üyelerle etkileşimde bulunmasıdır.",
+        "Sadece soyut metotlar ve sabitler içeren bir referans tipidir.",
+        "Bir sınıfın başka bir sınıftan tüm özelliklerini kopyalamasıdır."
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Java'da bir değişken nasıl tanımlanır?",
+      "secenekler": [
+        "variable x;",
+        "var x;",
+        "int x;",
+        "x = new Variable();"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Java'da bir döngüyü sonlandırmak için hangi anahtar kelime kullanılır?",
+      "secenekler": [
+        "break",
+        "end",
+        "terminate",
+        "exit"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da bir ArrayList nasıl oluşturulur?",
+      "secenekler": [
+        "List myList = new ArrayList();",
+        "ArrayList myList = new List();",
+        "ArrayList myList = create ArrayList();",
+        "List myList = ArrayList.create();"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da bir dosyadan veri okumak için hangi sınıf kullanılır?",
+      "secenekler": [
+        "FileReader",
+        "FileWriter",
+        "BufferedReader",
+        "StreamWriter"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Java'da bir thread nasıl oluşturulur?",
+      "secenekler": [
+        "Thread t = new Thread();",
+        "Thread.start();",
+        "start Thread t = new Thread();",
+        "Thread.create();"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da JDBC nedir?",
+      "secenekler": [
+        "Java Database Connectivity",
+        "Java Database Control",
+        "Java Database Class",
+        "Java Database Compiler"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da bir metodu override etmek ne demektir?",
+      "secenekler": [
+        "Metodu bir daha çağırmak.",
+        "Metodu geliştirmek.",
+        "Metodu değiştirmek ve genişletmek.",
+        "Metodu gizlemek."
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Java'da bir dosyaya veri yazmak için hangi sınıf kullanılır?",
+      "secenekler": [
+        "FileReader",
+        "BufferedReader",
+        "FileWriter",
+        "StreamWriter"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Java'da bir exception (istisna) ne işe yarar?",
+      "secenekler": [
+        "Programın düzgün çalışmasını sağlar.",
+        "Hata durumlarını temsil eder ve işlemek için kullanılır.",
+        "Programın hızını artırır.",
+        "Bir dosyayı okumak için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Java'da static anahtar kelimesi neyi ifade eder?",
+      "secenekler": [
+        "Bir değişkenin herkes tarafından erişilebilir olduğunu belirtir.",
+        "Bir sınıfın örneğine ait olduğunu belirtir.",
+        "Bir değişkenin sadece sınıf içinde kullanılabileceğini belirtir.",
+        "Bir değişkenin değerini sabit hale getirir."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Java'da final anahtar kelimesi ne işe yarar?",
+      "secenekler": [
+        "Bir değişkenin değerini sabit hale getirir.",
+        "Bir değişkenin herkes tarafından erişilebilir olduğunu belirtir.",
+        "Bir sınıfın örneğine ait olduğunu belirtir.",
+        "Bir değişkenin sadece sınıf içinde kullanılabileceğini belirtir."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da bir diziyi nasıl sıralarsınız?",
+      "secenekler": [
+        "sortArray(myArray);",
+        "myArray.sort();",
+        "Arrays.sort(myArray);",
+        "sort(myArray);"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Java'da bir interface nasıl implemente edilir?",
+      "secenekler": [
+        "class MyClass implements MyInterface { }",
+        "MyClass = interface MyInterface { }",
+        "class MyInterface implements MyClass { }",
+        "MyClass implements { } MyInterface;"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da switch-case yapısı hangi tür verilerle kullanılabilir?",
+      "secenekler": [
+        "Sadece sayısal verilerle",
+        "Sadece metinsel verilerle",
+        "Hem sayısal hem de metinsel verilerle",
+        "Sadece boolean verilerle"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da bir dosyadan veri okumak için hangi sınıf kullanılır?",
+      "secenekler": [
+        "FileReader",
+        "BufferedReader",
+        "FileWriter",
+        "StreamWriter"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Java'da NullPointerException hatası ne anlama gelir?",
+      "secenekler": [
+        "Bir değişkenin değeri null olarak atanmıştır ve bu değişkenle işlem yapılıyordur.",
+        "Bir sınıfın içinde bir hata bulunmuştur.",
+        "Bir döngü sonsuz bir şekilde çalışmaktadır.",
+        "Dosya bulunamadığı için bir hata meydana gelmiştir."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Java'da bir sınıfın örneğini oluşturmak için hangi anahtar kelime kullanılır?",
+      "secenekler": [
+        "create",
+        "new",
+        "instance",
+        "instantiate"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Java'da bir metodu overload etmek ne demektir?",
+      "secenekler": [
+        "Aynı sınıf içinde birden fazla metot tanımlamak.",
+        "Bir metodu başka bir sınıftan miras almak.",
+        "Bir metodu değiştirmek ve genişletmek.",
+        "Bir metodu gizlemek."
+      ],
+      "dogruSecenek": 0
+    }
+  ]
+  

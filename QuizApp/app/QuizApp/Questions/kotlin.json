@@ -1,0 +1,273 @@
+[
+    {
+      "soru": "Kotlin nedir?",
+      "secenekler": [
+        "Bir programlama dilidir.",
+        "Bir veritabanı yönetim sistemidir.",
+        "Bir işletim sistemidir.",
+        "Bir CSS framework'üdür."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Kotlin'de bir değişken nasıl tanımlanır?",
+      "secenekler": [
+        "değişken x = 5;",
+        "var x = 5;",
+        "x = new Variable(5);",
+        "int x = 5;"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Kotlin'de bir fonksiyon nasıl tanımlanır?",
+      "secenekler": [
+        "function myFunction() { }",
+        "def myFunction() { }",
+        "void myFunction() { }",
+        "fun myFunction() { }"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "Kotlin'de bir sınıf nasıl tanımlanır?",
+      "secenekler": [
+        "class MyClass { }",
+        "new class = MyClass();",
+        "define class MyClass: end",
+        "MyClass = class { }"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Kotlin'de bir sınıfın özelliğini (property) tanımlamak için hangi kelime kullanılır?",
+      "secenekler": [
+        "property",
+        "attribute",
+        "field",
+        "member"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Kotlin'de bir sınıfa yeni bir özellik eklemek için hangi erişim belirleyicisi kullanılır?",
+      "secenekler": [
+        "public",
+        "private",
+        "protected",
+        "internal"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Kotlin'de bir sınıfın özelliklerini gizlemek için hangi kelime kullanılır?",
+      "secenekler": [
+        "hide",
+        "restrict",
+        "override",
+        "encapsulate"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "Kotlin'de bir dizi (array) nasıl tanımlanır?",
+      "secenekler": [
+        "Array myArray = new Array();",
+        "myArray = new Array();",
+        "val myArray = arrayOf(1, 2, 3);",
+        "myArray = {1, 2, 3};"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Kotlin'de bir döngüyü sonlandırmak için hangi anahtar kelime kullanılır?",
+      "secenekler": [
+        "break",
+        "end",
+        "terminate",
+        "exit"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Kotlin'de bir List nasıl oluşturulur?",
+      "secenekler": [
+        "List myList = new List();",
+        "val myList = List();",
+        "val myList = mutableListOf();",
+        "myList = new ArrayList();"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Kotlin'de bir dosyadan veri okumak için hangi sınıf kullanılır?",
+      "secenekler": [
+        "FileReader",
+        "FileWriter",
+        "BufferedReader",
+        "FileInputStream"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Kotlin'de bir thread nasıl oluşturulur?",
+      "secenekler": [
+        "Thread t = new Thread();",
+        "Thread.start();",
+        "start Thread t = new Thread();",
+        "Thread.create();"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Kotlin'de bir metodu override etmek ne demektir?",
+      "secenekler": [
+        "Metodu bir daha çağırmak.",
+        "Metodu geliştirmek.",
+        "Metodu değiştirmek ve genişletmek.",
+        "Metodu gizlemek."
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Kotlin'de bir dosyaya veri yazmak için hangi sınıf kullanılır?",
+      "secenekler": [
+        "FileReader",
+        "BufferedReader",
+        "FileWriter",
+        "FileOutputStream"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Kotlin'de bir exception (istisna) ne işe yarar?",
+      "secenekler": [
+        "Programın düzgün çalışmasını sağlar.",
+        "Hata durumlarını temsil eder ve işlemek için kullanılır.",
+        "Programın hızını artırır.",
+        "Bir dosyayı okumak için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Kotlin'de bir sayının karesini almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "square()",
+        "sqrt()",
+        "power()",
+        "Math.pow()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "Kotlin'de bir stringin uzunluğunu nasıl bulabilirsiniz?",
+      "secenekler": [
+        "len(myString)",
+        "myString.length()",
+        "length(myString)",
+        "myString.len()"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Kotlin'de bir stringi ters çevirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "reverseString()",
+        "str_reverse()",
+        "strrev()",
+        "myString.reverse()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "Kotlin'de bir diziyi sıralamak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "arrange()",
+        "sortArray()",
+        "arraySort()",
+        "sort()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "Kotlin'de bir dizi elemanlarını filtrelemek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "filterArray()",
+        "array_filter()",
+        "selectArray()",
+        "findArray()"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Kotlin'de bir dizi elemanlarını birleştirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "concat()",
+        "combine()",
+        "merge()",
+        "join()"
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "Kotlin'de bir dizi elemanlarını tersine çevirmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "reverseArray()",
+        "flipArray()",
+        "array_reverse()",
+        "arr_reverse()"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "Kotlin'de bir dizinin belirli bir elemanını almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "getElement()",
+        "array_element()",
+        "getArrayElement()",
+        "array_slice()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "Kotlin'de bir dizinin son elemanını almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "getLast()",
+        "endElement()",
+        "array_last()",
+        "last()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "Kotlin'de bir dizinin belirli bir elemanını silmek için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "removeElement()",
+        "deleteElement()",
+        "unset()",
+        "removeAt()"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "Kotlin'de bir dizinin boyutunu nasıl bulabilirsiniz?",
+      "secenekler": [
+        "sizeOf()",
+        "count()",
+        "length()",
+        "getSize()"
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "Kotlin'de bir sayının mutlak değerini almak için hangi fonksiyon kullanılır?",
+      "secenekler": [
+        "abs()",
+        "absolute()",
+        "absoluteValue()",
+        "Math.abs()"
+      ],
+      "dogruSecenek": 0
+    }
+  ]
+  

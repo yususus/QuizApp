@@ -1,0 +1,23 @@
+.box2 {
+    display: block;
+    justify-content: center;
+    background-color: rgb(255, 247, 212);
+    text-align: center;
+    width: 500px;
+    height: 450px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+}
+
+.timer{
+    justify-content: end;
+    text-align: right;
+    padding-right: 25px;
+}

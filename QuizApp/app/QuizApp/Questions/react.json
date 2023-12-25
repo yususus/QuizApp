@@ -1,0 +1,233 @@
+[
+    {
+      "soru": "React nedir?",
+      "secenekler": [
+        "JavaScript tabanlı bir programlama dilidir.",
+        "Bir JavaScript kütüphanesidir.",
+        "Bir CSS framework'üdür.",
+        "Bir veritabanı yönetim sistemidir."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "React'ta state nedir?",
+      "secenekler": [
+        "Bir bileşenin görünümünü tanımlayan yapıdır.",
+        "Bir bileşenenin içindeki verileri tutan nesnedir.",
+        "React'ın temel yapı taşıdır.",
+        "React tarafından otomatik olarak oluşturulan bir özelliktir."
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "React'ta JSX nedir?",
+      "secenekler": [
+        "JavaScript XML formatıdır.",
+        "JavaScript ile yazılmış bir paket yöneticisidir.",
+        "React'ın eski bir versiyonudur.",
+        "JavaScript kodunu daha iyi organize etmek için kullanılan bir yapıdır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "React component'ler arasında veri iletimi nasıl yapılır?",
+      "secenekler": [
+        "Props kullanılarak.",
+        "State kullanılarak.",
+        "Redux kullanılarak.",
+        "Context API kullanılarak."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "React Router nedir?",
+      "secenekler": [
+        "React uygulamalarında dolaşımı yöneten bir kütüphanedir.",
+        "React bileşenlerini birbirine bağlamak için kullanılır.",
+        "React'ın bir parçasıdır ve ayrı bir kurulum gerektirmez.",
+        "React uygulamalarında veritabanı işlemlerini gerçekleştirmek için kullanılır."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "React'ta yaşam döngüsü metotları nelerdir?",
+      "secenekler": [
+        "render, update, destroy",
+        "create, read, update, delete",
+        "componentDidMount, componentDidUpdate, componentWillUnmount",
+        "start, stop, restart"
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "React Hook'ları nedir?",
+      "secenekler": [
+        "React uygulamalarında hata yakalamak için kullanılan yapıdır.",
+        "Class bileşenlerini fonksiyonel bileşenlere dönüştürmek için kullanılır.",
+        "React uygulamalarında API istekleri yapmak için kullanılan yapıdır.",
+        "React bileşenlerinde durumu yönetmek için kullanılan fonksiyonlardır."
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "React'ta bir bileşenin durumu nasıl güncellenir?",
+      "secenekler": [
+        "this.setState() metodu kullanılarak.",
+        "Bileşenin doğrudan değişkenlerine erişilerek.",
+        "React komut satırından.",
+        "React DevTools kullanılarak."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "React'ta CSS dosyaları nasıl entegre edilir?",
+      "secenekler": [
+        "CSS dosyalarını import ederek.",
+        "style tag'leri kullanarak.",
+        "React'ın built-in CSS modül sistemini kullanarak.",
+        "Bileşenlerin içinde inline olarak yazarak."
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "React'ta bir formun durumu nasıl yönetilir?",
+      "secenekler": [
+        "Form elemanlarını doğrudan değiştirerek.",
+        "Form elemanlarına ref kullanarak.",
+        "Form elemanlarının durumu state kullanılarak yönetilir.",
+        "React Form kütüphanesi kullanılarak."
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "React'ta prop drilling nedir?",
+      "secenekler": [
+        "Prop isimlerini değiştirmek için kullanılan bir tekniktir.",
+        "Bir bileşenin içindeki başka bir bileşene prop geçirme işlemidir.",
+        "React bileşenlerini birbirine bağlamak için kullanılan bir yöntemdir.",
+        "React projelerinde performansı artırmak için kullanılan bir optimizasyon tekniğidir."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "React'ta conditional rendering nasıl yapılır?",
+      "secenekler": [
+        "if-else ifadeleri kullanarak.",
+        "Ternary operatörü kullanarak.",
+        "Switch-case blokları kullanarak.",
+        "Hepsi"
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "React'ta Higher Order Component (HOC) nedir?",
+      "secenekler": [
+        "React bileşenlerini birbirine bağlamak için kullanılan bir yöntemdir.",
+        "React uygulamalarında hata yakalamak için kullanılan bir yapıdır.",
+        "Farklı bileşenleri birleştiren bir yapıdır.",
+        "Bir veya daha fazla bileşeni saran ve onlara ek özellikler ekleyen bir bileşen türüdür."
+      ],
+      "dogruSecenek": 3
+    },
+    {
+      "soru": "React'ta key prop'u ne işe yarar?",
+      "secenekler": [
+        "Bir bileşeni benzersiz bir şekilde tanımlamak için kullanılır.",
+        "Bir bileşenin içindeki öğeleri sıralamak için kullanılır.",
+        "Bir bileşenin state'ini güncellemek için kullanılır.",
+        "Bir bileşenin prop'larını kontrol etmek için kullanılır."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "React'ta Redux nedir?",
+      "secenekler": [
+        "React için bir stil yönetim kütüphanesidir.",
+        "Global durumu yönetmek için kullanılan bir state yönetim kütüphanesidir.",
+        "React bileşenlerini birbirine bağlamak için kullanılan bir yöntemdir.",
+        "React'ta animasyonları yönetmek için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "React'ta async/await neden kullanılır?",
+      "secenekler": [
+        "React bileşenlerini asenkron hale getirmek için kullanılır.",
+        "API istekleri ve diğer asenkron işlemleri yönetmek için kullanılır.",
+        "React bileşenlerini senkron hale getirmek için kullanılır.",
+        "Redux ile iletişim kurmak için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "React'ta Fragments nedir?",
+      "secenekler": [
+        "Bir tür state yönetim kütüphanesidir.",
+        "Bir bileşenin içindeki öğeleri sıralamak için kullanılır.",
+        "HTML elemanları arasında birleştirici öğelerdir.",
+        "Bir bileşenin render edilmesini kontrol eden yapıdır."
+      ],
+      "dogruSecenek": 2
+    },
+    {
+      "soru": "React'ta JSX nedir?",
+      "secenekler": [
+        "JavaScript XML formatıdır.",
+        "JavaScript ile yazılmış bir paket yöneticisidir.",
+        "React'ın eski bir versiyonudur.",
+        "JavaScript kodunu daha iyi organize etmek için kullanılan bir yapıdır."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "React'ta Error Boundaries nedir?",
+      "secenekler": [
+        "Hataları engellemek için kullanılan bir yapıdır.",
+        "Hataları yakalamak ve işlemek için kullanılan bir yapıdır.",
+        "React bileşenlerini birbirine bağlamak için kullanılan bir yöntemdir.",
+        "CSS hatalarını düzeltmek için kullanılan bir yapıdır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "React'ta memoization nedir?",
+      "secenekler": [
+        "Bir bileşenin state'ini güncellemek için kullanılır.",
+        "Bir fonksiyonun sonucunu önbellekte tutma işlemidir.",
+        "Bir bileşenin ömrünü uzatmak için kullanılır.",
+        "Bir bileşeni başka bir bileşene bağlamak için kullanılır."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "React'ta PropTypes nedir?",
+      "secenekler": [
+        "Bir bileşenin prop'larını kontrol etmek için kullanılır.",
+        "React projelerinde performansı artırmak için kullanılan bir optimizasyon tekniğidir.",
+        "Bir bileşeni başka bir bileşene bağlamak için kullanılır.",
+        "React bileşenlerini birbirine bağlamak için kullanılan bir yöntemdir."
+      ],
+      "dogruSecenek": 0
+    },
+    {
+      "soru": "React'ta Context API nedir?",
+      "secenekler": [
+        "React projelerinde performansı artırmak için kullanılan bir optimizasyon tekniğidir.",
+        "Global durumu yönetmek için kullanılan bir API'dir.",
+        "Bir bileşenin state'ini güncellemek için kullanılır.",
+        "React bileşenlerini birbirine bağlamak için kullanılan bir yöntemdir."
+      ],
+      "dogruSecenek": 1
+    },
+    {
+      "soru": "React Native nedir?",
+      "secenekler": [
+        "Web uygulamaları için geliştirilen bir React kütüphanesidir.",
+        "React projelerinde kullanılan bir state yönetim kütüphanesidir.",
+        "Mobil uygulamalar için geliştirilen bir React framework'üdür.",
+        "React bileşenlerini birbirine bağlamak için kullanılan bir yöntemdir."
+      ],
+      "dogruSecenek": 2
+    }
+  ]
+  
