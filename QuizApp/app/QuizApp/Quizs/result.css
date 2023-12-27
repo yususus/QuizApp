@@ -17,14 +17,14 @@
     padding-left: 5%;
     padding-top: 5%;
 }
-.pointsAndpuan{
+.durum{
     display: flex;
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
 }
-.points{
+.text{
     font-weight: bold;
     font-size: large;
 }
