@@ -12,4 +12,12 @@
     font-family: Helvetica;
     padding-left: 24ch;
 }
-
+.login{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
