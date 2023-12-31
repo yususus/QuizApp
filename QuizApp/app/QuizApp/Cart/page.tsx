@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, MouseEvent } from "react";
 import "./cart.css";
-import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -11,8 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
   
 
-export const Cart = () => {
-  const navigate = useNavigate();
+export default function Cart () {
 
   const handleClick = () => {
     // Navigate to the desired path

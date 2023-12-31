@@ -1,10 +1,11 @@
+'use client'
 import React, { useEffect, useState } from "react";
 import sql from "../Questions/sql.json";
 import "./quiz.css";
 import { FormControl, FormControlLabel, Radio, FormHelperText, Button, RadioGroup } from '@mui/material';
 
 
-export const Quiz = () => {
+export default function Quiz () {
     const [value, setValue] = useState('');
     const [error, setError] = useState(false);
     const [helperText, setHelperText] = useState('Sana Güveniyorum');

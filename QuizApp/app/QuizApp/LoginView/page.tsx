@@ -87,28 +87,27 @@ export const Login = () => {
     );
 }*/
 
-export const Login = () => {
+export default function Login () {
 
     const navigate = useNavigate();
     const [signUp, setSignUp] = React.useState(false); // signUp durum değişkeni
     const [login, setLogin] = React.useState(false); // login durum değişkeni
 
     // signUp veya login değiştiğinde çalışacak yan etki
-    useEffect(() => {
-        if (signUp) {
-            navigate("./QuizApp/LoginView/signUp");
-        }
-        if (login) {
-            navigate("./QuizApp/Home/cart");
-        }
-    }, [signUp, login]); // yan etkinin bağlı olduğu durum değişkenleri
-
     const handleSignUpClick = () => {
-        setSignUp(true); // signUp durumunu true yaparak yan etkiyi tetikle
+        setSignUp(true); 
     };
     const goQuiz = () => {
-        setLogin(true); // login durumunu true yaparak yan etkiyi tetikle
+        setLogin(true); 
     }
+    useEffect(() => {
+        if (signUp) {
+            navigate("./QuizApp/SignUp/");
+        }
+        if (login) {
+            navigate("./QuizApp/Cart/");
+        }
+    }, [signUp, login]);
 
     const [showPassword, setShowPassword] = React.useState(false);
     const handleClickShowPassword = () => setShowPassword((show) => !show);

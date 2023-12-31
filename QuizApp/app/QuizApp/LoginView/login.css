@@ -4,6 +4,7 @@
     padding-left: 14ch;
     padding-top: 40px;
     padding-bottom: 30px;
+    color: black;
 }
 
 .title2 {
@@ -11,9 +12,9 @@
     font-weight: bold;
     font-family: Helvetica;
     padding-left: 24ch;
+    color: black;
 }
 .login{
-    
     display: flex;
     align-items: center;
     justify-content: center;
