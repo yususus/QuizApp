@@ -102,10 +102,10 @@ export default function Login () {
     }
     useEffect(() => {
         if (signUp) {
-            navigate("./QuizApp/SignUp/");
+            navigate('../Quiz/SignUp');
         }
         if (login) {
-            navigate("./QuizApp/Cart/");
+            navigate("../Quiz/Cart/");
         }
     }, [signUp, login]);
 
