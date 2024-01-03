@@ -10,7 +10,25 @@ import { useNavigate } from 'react-router-dom';
 import backgroundImage from './123.png';
 
 
+
+
 export default function Cart() {
+  const languages = ['React', 'Java', 'Python', 'Sql', 'C#', 'PHP', 'JavaScript', 'Kotlin', 'Css'];
+
+  const LanguageCart = ({ language }) => (
+    <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
+      <CardContent>
+        <Typography variant="h5" component="div">
+          {language} Biliyor musun?
+        </Typography>
+      </CardContent>
+      <CardActions sx={{ justifyContent: 'center' }}>
+        <Button variant="contained" size="medium">
+          Sorulara Başla
+        </Button>
+      </CardActions>
+    </Card>
+  );
 
   const handleClick = () => {
     // Navigate to the desired path
@@ -31,124 +49,10 @@ export default function Cart() {
       alignItems: 'center',
       justifyContent: 'center'
     }}>
-      <div className=" boxes">
-        <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              React Biliyor musun?
-            </Typography>
-
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'center' }}>
-            <Button variant="contained" size="medium" onClick={handleClick}>
-              Sorulara Başla
-            </Button>
-          </CardActions>
-        </Card>
-        <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              Java Biliyor musun?
-            </Typography>
-
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'center' }}>
-            <Button variant="contained" size="medium" >
-              Sorulara Başla
-            </Button>
-          </CardActions>
-        </Card>
-        <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              Python Biliyor musun?
-            </Typography>
-
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'center' }}>
-            <Button variant="contained" size="medium" >
-              Sorulara Başla
-            </Button>
-          </CardActions>
-        </Card>
-        <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              Sql Biliyor musun?
-            </Typography>
-
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'center' }}>
-            <Button variant="contained" size="medium" >
-              Sorulara Başla
-            </Button>
-          </CardActions>
-        </Card>
-        <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              C# Biliyor musun?
-            </Typography>
-
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'center' }}>
-            <Button variant="contained" size="medium" >
-              Sorulara Başla
-            </Button>
-          </CardActions>
-        </Card>
-        <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              PHP Biliyor musun?
-            </Typography>
-
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'center' }}>
-            <Button variant="contained" size="medium" >
-              Sorulara Başla
-            </Button>
-          </CardActions>
-        </Card>
-        <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              JavaScript Biliyor musun?
-            </Typography>
-
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'center' }}>
-            <Button variant="contained" size="medium" >
-              Sorulara Başla
-            </Button>
-          </CardActions>
-        </Card>
-        <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              Kotlin Biliyor musun?
-            </Typography>
-
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'center' }}>
-            <Button variant="contained" size="medium" >
-              Sorulara Başla
-            </Button>
-          </CardActions>
-        </Card>
-        <Card sx={{ minWidth: 275, minHeight: 100, margin: 3, backgroundColor: 'pink' }} >
-          <CardContent>
-            <Typography variant="h5" component="div">
-              Css Biliyor musun?
-            </Typography>
-
-          </CardContent>
-          <CardActions sx={{ justifyContent: 'center' }}>
-            <Button variant="contained" size="medium" >
-              Sorulara Başla
-            </Button>
-          </CardActions>
-        </Card>
+      <div className="boxes">
+        {languages.map((language) => (
+          <LanguageCart key={language} language={language} />
+        ))}
       </div>
     </div>
   );
