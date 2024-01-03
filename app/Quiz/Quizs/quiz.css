@@ -19,5 +19,13 @@
 .timer{
     justify-content: end;
     text-align: right;
+    color: black;
     padding-right: 25px;
+}
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
 }

@@ -1,15 +1,16 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import sql from "../Questions/sql.json";
-import "./quiz.css";
 import { FormControl, FormControlLabel, Radio, FormHelperText, Button, RadioGroup } from '@mui/material';
-
+import "./quiz.css";
 
 export default function Quiz () {
     const [value, setValue] = useState('');
     const [error, setError] = useState(false);
     const [helperText, setHelperText] = useState('Sana Güveniyorum');
     const [questionIndex, setQuestionIndex] = useState(0);
+    const [count, setCount] = useState(10);
+    const [disabled, setDisabled] = useState(false);
 
     const handleRadioChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
         setValue(event.target.value);
@@ -37,28 +38,23 @@ export default function Quiz () {
         setQuestionIndex(questionIndex + 1);
         setValue('');
         setError(false);
-        setCount(10); // Zamanı tekrar başlat
+        setCount(10); 
         setDisabled(false)
     };
 
-    const [count, setCount] = useState(10);
-    const [disabled, setDisabled] = useState(false);
-
-  useEffect(() => {
-    if(count > 0) {
-      const timer = setTimeout(() => {
-        setCount(count - 1);
-      }, 1000);
-      return () => clearTimeout(timer);
-    } else {
-        setDisabled(true); // Zaman bitince butonu devre dışı bırak
-    }
-  }, [count]);
-
-  
+    useEffect(() => {
+        if(count > 0) {
+            const timer = setTimeout(() => {
+                setCount(count - 1);
+            }, 1000);
+            return () => clearTimeout(timer);
+        } else {
+            setDisabled(true); 
+        }
+    }, [count]);
 
     return (
-        <div>
+        <div className="display">
             {questionIndex < sql.length && (
                 <div className="box2">
                     <h1 className="timer">{count > 0 ? count : "!!!"}</h1>
