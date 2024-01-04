@@ -8,10 +8,12 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
 import backgroundImage from './123.png';
+import Link from 'next/link';
+
 
 
 export default function Cart() {
-  const languages = ['React', 'Java', 'Python', 'Sql', 'C#', 'PHP', 'JavaScript', 'Kotlin', 'Css'];
+  const languages = ['react', 'java', 'python', 'sql', 'php', 'js', 'kotlin', 'css'];
 
   const LanguageCart = ({ language }) => (
     <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
@@ -21,9 +23,15 @@ export default function Cart() {
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: 'center' }}>
-        <Button variant="contained" size="medium">
+        {/* <Button variant="contained" size="medium">
           Sorulara Başla
-        </Button>
+        </Button> */}
+        <Link href={{
+          pathname:'Quizs',
+          query:{
+            name:language
+          }
+        }}>Sorulara Başla</Link>
       </CardActions>
     </Card>
   );
