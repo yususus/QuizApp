@@ -116,10 +116,10 @@ export default function Login() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </FormControl>
-            <Link href="../SignUp" style={{ textDecoration: 'none' }}>
+            <Link href="../Quiz/SignUp" style={{ textDecoration: 'none' }}>
               <Button variant="text">Üye ol</Button>
             </Link>
-            <Link href={login ? '../Cart' : '#'} style={{ textDecoration: 'none' }}>
+            <Link href={login ? '../Quiz/Cart' : '#'} style={{ textDecoration: 'none' }}>
             <Button variant="contained" onClick={handleLoginClick} sx={{ borderRadius: 5, color: 'white', backgroundColor: '#092635' }}>Giriş Yap</Button>
             </Link>
             {errorMessage && <div style={{ color: 'red' }}>{errorMessage + login}</div>}
