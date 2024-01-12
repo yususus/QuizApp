@@ -6,7 +6,7 @@ import { Button, FormControl, IconButton, InputAdornment, InputLabel, OutlinedIn
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { AccountCircle } from "@mui/icons-material";
-import { addDoc, memberListCollection } from '../firebase';
+import { addDoc, memberListCollection , createUserWithEmailAndPassword, auth} from '../firebase';
 import Link from 'next/link';
 
 import "../LoginView/login.css";
@@ -33,11 +33,16 @@ export default function SignUp() {
         return;
       }
 
+      // Use Firebase Authentication to create a new user
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const newUser = userCredential.user;
+
       const newMember = {
+        uid: newUser.uid,
         email,
         name,
         surname,
-        password,
+        
       };
 
       // Add a new document to the memberListCollection

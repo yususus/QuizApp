@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import "./login.css"
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { addDoc, memberListCollection, getDocs, onSnapshot } from '../firebase';
+import { addDoc, memberListCollection, getDocs, onSnapshot, signInWithEmailAndPassword, auth } from '../firebase';
 
 interface Member {
   id: string;
@@ -21,48 +21,29 @@ interface Member {
 }
 
 export default function Login() {
-  const [memberList, setMemberList] = useState<Member[]>([]);
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [login, setLogin] = React.useState(false);
   const [errorMessage, setErrorMessage] = React.useState('');
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const querySnapshot = await getDocs(memberListCollection);
-        const newList = querySnapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        })) as Member[];
-        setMemberList(newList);
-
-        const unsubscribe = onSnapshot(memberListCollection, (snapshot) => {
-          const updatedList = snapshot.docs.map((doc) => ({
-            id: doc.id,
-            ...doc.data(),
-          })) as Member[];
-          setMemberList(updatedList);
-        });
-
-        return () => unsubscribe();
-      } catch (error) {
-        console.error('Error fetching documents: ', error);
+  const handleLoginClick = async () => {
+    try {
+      // Check if any input field is empty
+      if (!email || !password) {
+        setErrorMessage('Lütfen mail ve şifrenizi girin');
+        return;
       }
-    };
 
-    fetchData();
-  }, []);
+      // Use Firebase Authentication to sign in the user
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
 
-  const handleLoginClick = () => {
-    const matchingMember = memberList.find(
-      (member) => member.email === email && member.password === password
-    );
-
-    if (matchingMember) {
       setLogin(true);
-    } else {
-      setErrorMessage('Invalid email or password. Please try again.');
+      setErrorMessage('');
+      console.log('başarılı girişi', user);
+    } catch (error) {
+      console.error('Error login:', error);
+      setErrorMessage('Mail veya şifre hatalı');
     }
   };
 

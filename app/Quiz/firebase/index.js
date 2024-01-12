@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } from 'firebase/auth';
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, addDoc, updateDoc, doc, getDocs, deleteDoc,onSnapshot } from 'firebase/firestore';
 // TODO: Add SDKs for Firebase products that you want to use
@@ -22,6 +23,8 @@ const firebaseConfig = {
 
 
 const app = initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(firebaseConfig);
+const auth = getAuth(firebaseApp);
 
 const db = getFirestore(app);
 const memberListCollection = collection(db, 'memberList'); 
@@ -57,6 +60,9 @@ const addDocument = async (collectionRef, data) => {
   export {
     db,
     memberListCollection,
+    auth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
     addDocument,
     updateDocument,
     deleteDocument,
