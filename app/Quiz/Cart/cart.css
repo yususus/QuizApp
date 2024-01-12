@@ -28,3 +28,19 @@
     height: 250px;
     border-radius: 5px;
 }
+.btn{
+    background-color: #4caf50; /* Renk */
+  border: none; /* Kenarlık yok */
+  color: white; /* Yazı rengi */
+  padding: 10px 20px; /* Dolgu */
+  text-align: center; /* Yazıyı ortala */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn:hover{
+    background-color: #45a049; /* Hover rengi */
+}

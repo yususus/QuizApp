@@ -3,10 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { FormControl, FormControlLabel, Radio, FormHelperText, Button, RadioGroup } from '@mui/material';
 import './quiz.css';
 
+
+
+
 const Quiz = ({
   searchParams,
 }: {
   searchParams: {
+    userId(userId: any): unknown;
     name: string;
   };
 }) => {
@@ -53,6 +57,40 @@ const Quiz = ({
       setError(true);
     }
   };
+  
+  
+
+
+  /*
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    const currentQuestion = questions[questionIndex];
+    if (answered) {
+      return;
+    }
+  
+    if (value === currentQuestion.dogruSecenek.toString()) {
+      setHelperText('Tebrikler +10');
+      setError(false);
+      setDisabled(true);
+      setTotalScore((prevScore) => {
+        const newScore = prevScore + 10;
+        // Update the user's score in the database
+        const userRef = db.collection('points').doc(searchParams.userId);
+        userRef.update({
+          score: newScore,
+        });
+        return newScore;
+      });
+    } else if (value !== '') {
+      setHelperText('Yanlış cevap');
+      setError(true);
+      setDisabled(true);
+    } else {
+      setHelperText('Birini seçiniz!');
+      setError(true);
+    }
+  };*/
 
   const handleNextQuestion = () => {
     setQuestionIndex(questionIndex + 1);
@@ -90,7 +128,7 @@ const Quiz = ({
                 value={value}
                 onChange={handleRadioChange}
               >
-                {questions[questionIndex].secenekler.map((secenek, index) => (
+                {questions[questionIndex].secenekler.map((secenek: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined, index: React.Key | null | undefined) => (
                   <FormControlLabel key={index} value={index.toString()} control={<Radio />} label={secenek} />
                 ))}
               </RadioGroup>

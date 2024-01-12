@@ -26,7 +26,7 @@ export default function Cart() {
         {/* <Button variant="contained" size="medium">
           Sorulara Başla
         </Button> */}
-        <Link href={{
+        <Link className="btn" href={{
           pathname:'Quizs',
           query:{
             name:language
@@ -38,6 +38,7 @@ export default function Cart() {
 
   const handleClick = () => {
     console.log("Button clicked");
+    
   };
 
   return (
