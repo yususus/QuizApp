@@ -17,6 +17,8 @@ const Quiz = ({
   const [questionIndex, setQuestionIndex] = useState(0);
   const [count, setCount] = useState(10);
   const [disabled, setDisabled] = useState(false);
+  const [totalScore, setTotalScore] = useState(0); 
+  const [answered, setAnswered] = useState(false);
 
   useEffect(() => {
     // searchParams.name değerine göre doğru JSON dosyasına erişimi gerçekleştirin
@@ -33,13 +35,19 @@ const Quiz = ({
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     const currentQuestion = questions[questionIndex];
+    if (answered) {
+      return;
+    }
 
     if (value === currentQuestion.dogruSecenek.toString()) {
       setHelperText('Tebrikler +10');
       setError(false);
+      setDisabled(true);
+      setTotalScore((prevScore) => prevScore + 10);
     } else if (value !== '') {
       setHelperText('Yanlış cevap');
       setError(true);
+      setDisabled(true);
     } else {
       setHelperText('Birini seçiniz!');
       setError(true);
@@ -67,6 +75,9 @@ const Quiz = ({
 
   return (
     <div className="display">
+      <div className="score-display">
+        <p>Toplam Puan: {totalScore}</p>
+      </div>
       {questionIndex < questions.length && (
         <div className="box2">
           <h1 className="timer">{count > 0 ? count : '!!!'}</h1>
