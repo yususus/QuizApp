@@ -13,14 +13,27 @@ import Link from 'next/link';
 
 
 export default function Cart() {
+  
   const languages = ['react', 'java', 'python', 'sql', 'php', 'js', 'kotlin', 'css'];
+  
+  const languageLinks = {
+    react: "https://www.w3schools.com/react/",
+    java: "https://www.w3schools.com/java/",
+    python: "https://www.w3schools.com/python/",
+    sql: "https://www.w3schools.com/sql/",
+    php: "https://www.w3schools.com/php/",
+    js: "https://www.w3schools.com/js/",
+    kotlin: "https://www.w3schools.com/kotlin/",
+    css: "https://www.w3schools.com/css/"
+  };
 
   const LanguageCart = ({ language }) => (
-    <Card sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
-      <CardContent>
-        <Typography variant="h5" component="div">
-          {language} Biliyor musun?
-        </Typography>
+    
+    <Card className="card" sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
+      <CardContent className="boxes">
+      <Link className="txt" href={languageLinks[language]} target="_blank" rel="noopener noreferrer">
+      {language.charAt(0).toUpperCase() + language.slice(1)} Biliyor musun?
+      </Link>
       </CardContent>
       <CardActions sx={{ justifyContent: 'center' }}>
         {/* <Button variant="contained" size="medium">
