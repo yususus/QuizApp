@@ -1,10 +1,9 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { FormControl, FormControlLabel, Radio, FormHelperText, Button, RadioGroup } from '@mui/material';
+import { addDoc, doc,collection,pointsCollection,db } from '../firebase';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import './quiz.css';
-
-
-
 
 const Quiz = ({
   searchParams,
@@ -14,6 +13,7 @@ const Quiz = ({
     name: string;
   };
 }) => {
+  const [user, setUser] = useState(null);
   const [questions, setQuestions] = useState([]);
   const [value, setValue] = useState('');
   const [error, setError] = useState(false);
@@ -21,7 +21,7 @@ const Quiz = ({
   const [questionIndex, setQuestionIndex] = useState(0);
   const [count, setCount] = useState(10);
   const [disabled, setDisabled] = useState(false);
-  const [totalScore, setTotalScore] = useState(0); 
+  const [totalScore, setTotalScore] = useState(0);
   const [answered, setAnswered] = useState(false);
 
   useEffect(() => {
@@ -30,56 +30,53 @@ const Quiz = ({
     setQuestions(jsonFile);
   }, [searchParams.name]);
 
-  const handleRadioChange = (event: { target: { value: React.SetStateAction<string> } }) => {
+  useEffect(() => {
+    // Listen for changes in user authentication state
+    const auth = getAuth();
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  const handleRadioChange = (event) => {
     setValue(event.target.value);
     setHelperText(' ');
     setError(false);
   };
 
-  const handleSubmit = (event: { preventDefault: () => void }) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     const currentQuestion = questions[questionIndex];
-    if (answered) {
+
+    if (answered || questionIndex >= questions.length) {
       return;
     }
+
+    // Ensure the user is authenticated
+    if (!user) {
+      console.error('User not authenticated.');
+      return;
+    }
+
+    const userId = user.uid; // Use the UID of the authenticated user
 
     if (value === currentQuestion.dogruSecenek.toString()) {
       setHelperText('Tebrikler +10');
       setError(false);
       setDisabled(true);
-      setTotalScore((prevScore) => prevScore + 10);
-    } else if (value !== '') {
-      setHelperText('Yanlış cevap');
-      setError(true);
-      setDisabled(true);
-    } else {
-      setHelperText('Birini seçiniz!');
-      setError(true);
-    }
-  };
-  
-  
 
-
-  /*
-  const handleSubmit = (event: { preventDefault: () => void }) => {
-    event.preventDefault();
-    const currentQuestion = questions[questionIndex];
-    if (answered) {
-      return;
-    }
-  
-    if (value === currentQuestion.dogruSecenek.toString()) {
-      setHelperText('Tebrikler +10');
-      setError(false);
-      setDisabled(true);
       setTotalScore((prevScore) => {
         const newScore = prevScore + 10;
+
         // Update the user's score in the database
-        const userRef = db.collection('points').doc(searchParams.userId);
-        userRef.update({
-          score: newScore,
-        });
+        //const userDocRef = doc(db, 'points', userId);
+
+        // Use updateDoc to update the document
+        
+        
+
         return newScore;
       });
     } else if (value !== '') {
@@ -90,21 +87,39 @@ const Quiz = ({
       setHelperText('Birini seçiniz!');
       setError(true);
     }
-  };*/
+  };
 
   const handleNextQuestion = () => {
-    setQuestionIndex(questionIndex + 1);
+    setQuestionIndex((prevIndex) => prevIndex + 1);
     setValue('');
     setError(false);
     setCount(10);
     setDisabled(false);
+
+    // If all questions are completed, save the final score to Firebase
+    if (questionIndex === questions.length - 1) {
+      const userId = user.uid;
+      const userDocRef = doc(db, 'points', userId);
+
+      const pointsCollectionRef = collection(db, 'points');
+      // Use updateDoc to update the document
+      addDoc(pointsCollectionRef, {
+        userId: userId,
+        score: totalScore,
+        language:searchParams.name,
+        // Add any other user information you want to store
+      });
+
+      // You may also want to add a redirect or a completion message here
+      console.log('Quiz completed! Score saved to Firebase.');
+    }
   };
 
   useEffect(() => {
     if (count > 0) {
       const timer = setTimeout(() => {
         setCount(count - 1);
-      }, 2000);
+      }, 1000);
       return () => clearTimeout(timer);
     } else {
       setDisabled(true);
@@ -128,7 +143,7 @@ const Quiz = ({
                 value={value}
                 onChange={handleRadioChange}
               >
-                {questions[questionIndex].secenekler.map((secenek: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined, index: React.Key | null | undefined) => (
+                {questions[questionIndex].secenekler.map((secenek, index) => (
                   <FormControlLabel key={index} value={index.toString()} control={<Radio />} label={secenek} />
                 ))}
               </RadioGroup>

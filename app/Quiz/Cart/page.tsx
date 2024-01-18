@@ -9,13 +9,15 @@ import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
 import backgroundImage from './123.png';
 import Link from 'next/link';
+import { db ,collection, getDocs} from "../firebase";
 
 
 
 export default function Cart() {
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(false);
+  const [pointsData, setPointsData] = useState<{ userId: string; points: number; }[]>([]);
   const languages = ['react', 'java', 'python', 'sql', 'php', 'js', 'kotlin', 'css'];
-  
+
   const languageLinks = {
     react: "https://www.w3schools.com/react/",
     java: "https://www.w3schools.com/java/",
@@ -27,37 +29,52 @@ export default function Cart() {
     css: "https://www.w3schools.com/css/"
   };
 
+  const fetchPointsData = async () => {
+    try {
+      const pointsRef = collection(db, "points");
+      const pointsSnapshot = await getDocs(pointsRef);
+      const pointsData = pointsSnapshot.docs.map((doc) => ({
+        userId: doc.id,
+        points: doc.get("points") as number,
+      }));
+
+      // Puan verilerini burada işleyin ve bileşeninizin durumunu güncelleyin
+      console.log(pointsData);
+
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+
   const LanguageCart = ({ language }) => (
-    
+
     <Card className="card" sx={{ minWidth: 275, minHeight: 100, margin: 3 }}>
       <CardContent className="boxes">
-      <Link className="txt" href={languageLinks[language]} target="_blank" rel="noopener noreferrer">
-      {language.charAt(0).toUpperCase() + language.slice(1)} Biliyor musun?
-      </Link>
+        <Link className="txt" href={languageLinks[language]} target="_blank" rel="noopener noreferrer">
+          {language.charAt(0).toUpperCase() + language.slice(1)} Biliyor musun?
+        </Link>
       </CardContent>
       <CardActions sx={{ justifyContent: 'center' }}>
         {/* <Button variant="contained" size="medium">
           Sorulara Başla
         </Button> */}
         <Link className="btn" href={{
-          pathname:'Quizs',
-          query:{
-            name:language
+          pathname: 'Quizs',
+          query: {
+            name: language
           }
         }}>Sorulara Başla</Link>
       </CardActions>
     </Card>
   );
 
-  const handleClick = () => {
-    console.log("Button clicked");
-    
-  };
   const handleRightPanelToggle = () => {
     setIsRightPanelOpen(!isRightPanelOpen);
   };
 
   return (
+    
     <div style={{
       // use the src property of the image object
       backgroundImage: `url(${backgroundImage.src})`,
@@ -77,18 +94,25 @@ export default function Cart() {
         ))}
       </div>
       <Button
-className="rbtn"
-onClick={handleRightPanelToggle}
->
-{isRightPanelOpen ? 'Kapat' : 'En iyiler'}
-</Button>
+        className="rbtn"
+        onClick={handleRightPanelToggle}
+      >
+        {isRightPanelOpen ? 'Kapat' : 'En iyiler'}
+      </Button>
 
-{isRightPanelOpen && (
-<div className="right-panel">
-  <h2 className="h2">En iyiler Listesi</h2>
-  <p className="h2">Erdem 100 puan <br/> yusuf 50 puan</p>
-</div>
-)}
+      {isRightPanelOpen && (
+        <div className="right-panel">
+          <h2 className="h2">En iyiler Listesi</h2>
+          <ul>
+            {pointsData.map((data) => (
+              <li key={data.userId}>
+                {data.userId} - {data.points} puan
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
     </div>
   );
 };

@@ -27,7 +27,8 @@ const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
 
 const db = getFirestore(app);
-const memberListCollection = collection(db, 'memberList'); 
+const memberListCollection = collection(db, 'memberList');
+const pointsCollection = collection(db, 'points')
 
 const addDocument = async (collectionRef, data) => {
     try {
@@ -61,6 +62,8 @@ const addDocument = async (collectionRef, data) => {
     db,
     memberListCollection,
     auth,
+    pointsCollection,
+    getFirestore, collection,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     addDocument,
