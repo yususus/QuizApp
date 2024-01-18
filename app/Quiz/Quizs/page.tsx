@@ -4,7 +4,8 @@ import { FormControl, FormControlLabel, Radio, FormHelperText, Button, RadioGrou
 import { addDoc, doc,collection,pointsCollection,db } from '../firebase';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import './quiz.css';
-
+import { Router, useRouter } from 'next/router';
+import Link from 'next/link';
 const Quiz = ({
   searchParams,
 }: {
@@ -23,7 +24,6 @@ const Quiz = ({
   const [disabled, setDisabled] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
   const [answered, setAnswered] = useState(false);
-
   useEffect(() => {
     // searchParams.name değerine göre doğru JSON dosyasına erişimi gerçekleştirin
     const jsonFile = require(`../Questions/${searchParams.name}.json`);
@@ -75,7 +75,6 @@ const Quiz = ({
 
         // Use updateDoc to update the document
         
-        
 
         return newScore;
       });
@@ -97,7 +96,11 @@ const Quiz = ({
     setDisabled(false);
 
     // If all questions are completed, save the final score to Firebase
-    if (questionIndex === questions.length - 1) {
+};
+
+  const testiBitir =()=>{
+      alert('TEBRİKLER PUANINIZ: ' +totalScore);
+      
       const userId = user.uid;
       const userDocRef = doc(db, 'points', userId);
 
@@ -111,9 +114,8 @@ const Quiz = ({
       });
 
       // You may also want to add a redirect or a completion message here
-      console.log('Quiz completed! Score saved to Firebase.');
-    }
-  };
+      
+  }
 
   useEffect(() => {
     if (count > 0) {
@@ -156,10 +158,17 @@ const Quiz = ({
                   sx={{ mt: 1, mr: 1, color: 'black', backgroundColor: 'white', borderRadius: 5 }}
                   onClick={handleNextQuestion}
                   variant="outlined"
+                  disabled={questionIndex === questions.length - 1}
                 >
                   Diğer Soruya Geç
                 </Button>
+                
               )}
+              <Link href={"./Cart"} passHref>
+              <Button sx={{ mt: 1, mr: 1, color: 'black', backgroundColor: 'white', borderRadius: 5 }} onClick={testiBitir} variant="outlined">
+                Testi Bitir
+              </Button>
+              </Link>
             </FormControl>
           </form>
         </div>

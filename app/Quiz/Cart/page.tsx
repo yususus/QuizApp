@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./cart.css";
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -9,13 +9,16 @@ import Typography from '@mui/material/Typography';
 import { useNavigate } from 'react-router-dom';
 import backgroundImage from './123.png';
 import Link from 'next/link';
-import { db ,collection, getDocs} from "../firebase";
+import { db ,collection, getDocs, doc} from "../firebase";
+import { getDoc } from "firebase/firestore";
 
 
 
 export default function Cart() {
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(false);
-  const [pointsData, setPointsData] = useState<{ userId: string; points: number; }[]>([]);
+  const [pointsData, setPointsData] = useState<Map<string, { userId: string; score: number; name: string }[]>>(new Map());
+  const [memberData, setMemberData] = useState<{ uid: string; name:string; surname:string; }[]>([]);
+  
   const languages = ['react', 'java', 'python', 'sql', 'php', 'js', 'kotlin', 'css'];
 
   const languageLinks = {
@@ -28,23 +31,67 @@ export default function Cart() {
     kotlin: "https://www.w3schools.com/kotlin/",
     css: "https://www.w3schools.com/css/"
   };
+  useEffect(() => {
+    fetchPointsData();
+    fetchMemberData();
+  }, []);
 
-  const fetchPointsData = async () => {
+  const fetchMemberData = async () => {
     try {
-      const pointsRef = collection(db, "points");
-      const pointsSnapshot = await getDocs(pointsRef);
-      const pointsData = pointsSnapshot.docs.map((doc) => ({
-        userId: doc.id,
-        points: doc.get("points") as number,
-      }));
+      const memberRef = collection(db, "memberList");
+      const memberSnapshot = await getDocs(memberRef);
 
-      // Puan verilerini burada işleyin ve bileşeninizin durumunu güncelleyin
-      console.log(pointsData);
-
+      const memberData = await Promise.all(
+        memberSnapshot.docs.map(async(doc) => {
+          const uid =  doc.get("uid") as string;
+          const name = doc.get("name") as string;
+          const surname =  doc.get("surname") as string;
+          return { uid, name, surname };  // Her belge için bir nesne döndür
+        })
+      );
+      setMemberData(memberData);
+      return memberData;
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.error("Error fetching member data:", error);
     }
   };
+  
+  const fetchPointsData = async () => {
+    try {
+      const fetchedMemberData = await fetchMemberData(); // fetchMemberData fonksiyonunu çağır ve memberData'yı al
+  
+      if (fetchedMemberData) {
+        const pointsRef = collection(db, "points");
+        const pointsSnapshot = await getDocs(pointsRef);
+
+        const languagePointsMap = new Map<string, { userId: string; score: number; name: string }[]>();
+
+        pointsSnapshot.forEach((doc) => {
+          const userId = doc.get("userId") as string;
+          const score = doc.get("score") as number;
+          const language = doc.get("language") as string;
+
+          const matchingMember = fetchedMemberData.find((member) => member.uid === userId);
+
+          const data = { userId, score, name: matchingMember?.name || userId };
+
+          if (languagePointsMap.has(language)) {
+            languagePointsMap.get(language)?.push(data);
+          } else {
+            languagePointsMap.set(language, [data]);
+          }
+        });
+        
+  
+        setPointsData(languagePointsMap);
+      } else {
+        console.log("Member data is undefined.");
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+  
 
 
   const LanguageCart = ({ language }) => (
@@ -97,22 +144,26 @@ export default function Cart() {
         className="rbtn"
         onClick={handleRightPanelToggle}
       >
-        {isRightPanelOpen ? 'Kapat' : 'En iyiler'}
+        {isRightPanelOpen ? 'Kapat' : 'Kazanılan Puanlar'}
       </Button>
 
       {isRightPanelOpen && (
         <div className="right-panel">
-          <h2 className="h2">En iyiler Listesi</h2>
-          <ul>
-            {pointsData.map((data) => (
-              <li key={data.userId}>
-                {data.userId} - {data.points} puan
-              </li>
-            ))}
-          </ul>
+          <h2 className="h2">Puan Listesi</h2>
+          {Array.from(pointsData).map(([language, languagePoints]) => (
+            <div key={language}>
+              <h3 className="h3">{language} kazanılan puanlar</h3>
+              <ul>
+                {languagePoints.map((data) => (
+                  <li className="users" key={data.userId}>
+                    {data.name} - {data.score} puan
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       )}
-
     </div>
   );
 };

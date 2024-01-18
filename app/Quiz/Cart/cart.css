@@ -102,6 +102,12 @@
   border-radius: 4px;
   z-index: 2;
 }
-  h2{
+.h2{
     padding-top: 10vh;
+  }
+  .users{
+    color: black;
+  }
+  .h3{
+    color: black;
   }
