@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import "./cart.css";
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 
 export default function Cart() {
-  
+  const [isRightPanelOpen, setIsRightPanelOpen] = useState(false);
   const languages = ['react', 'java', 'python', 'sql', 'php', 'js', 'kotlin', 'css'];
   
   const languageLinks = {
@@ -53,6 +53,9 @@ export default function Cart() {
     console.log("Button clicked");
     
   };
+  const handleRightPanelToggle = () => {
+    setIsRightPanelOpen(!isRightPanelOpen);
+  };
 
   return (
     <div style={{
@@ -73,6 +76,19 @@ export default function Cart() {
           <LanguageCart key={language} language={language} />
         ))}
       </div>
+      <Button
+className="rbtn"
+onClick={handleRightPanelToggle}
+>
+{isRightPanelOpen ? 'Kapat' : 'En iyiler'}
+</Button>
+
+{isRightPanelOpen && (
+<div className="right-panel">
+  <h2 className="h2">En iyiler Listesi</h2>
+  <p className="h2">Erdem 100 puan <br/> yusuf 50 puan</p>
+</div>
+)}
     </div>
   );
 };

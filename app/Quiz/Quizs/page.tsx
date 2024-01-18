@@ -104,7 +104,7 @@ const Quiz = ({
     if (count > 0) {
       const timer = setTimeout(() => {
         setCount(count - 1);
-      }, 1000);
+      }, 2000);
       return () => clearTimeout(timer);
     } else {
       setDisabled(true);
